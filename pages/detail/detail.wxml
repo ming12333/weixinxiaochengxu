@@ -39,7 +39,9 @@
                 </view>
             </view>
       </navigator>
-    </view>
+</view>
+
+
     <view class="commentwrap">
         <view class="commenttitle">
             评论({{commentList.commentTotalCount}})

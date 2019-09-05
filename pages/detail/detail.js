@@ -15,7 +15,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  console.log(options);
+  console.log(1+options);
   let videoId=options.id;
   this.getVideoInfo(videoId);
   this.getOtherList(videoId);
@@ -77,7 +77,7 @@ Page({
       data:{},
       method:"GET",
       success:function(res){
-        console.log(res);
+       
             if(res.data.code===0){
               that.setData({
                 videoInfo:res.data.data.videoInfo
@@ -95,7 +95,7 @@ Page({
       data:{},
       method:"GET",
       success:function(res){
-        console.log(res);
+       
             if(res.data.code===0){
               that.setData({
                 othersList:res.data.data.othersList
